@@ -12,6 +12,16 @@ export interface TradingViewWidgetProps {
   className?: string;
 }
 
+/**
+ * Renders a TradingView chart widget in a styled container.
+ *
+ * @param title - Optional heading displayed above the chart
+ * @param scriptUrl - URL of the TradingView widget script
+ * @param config - Configuration passed to the TradingView widget
+ * @param height - Total container height in pixels
+ * @param className - Additional CSS classes for the container
+ * @returns The rendered TradingView widget
+ */
 export default function TradingViewWidget({
   title,
   scriptUrl,
