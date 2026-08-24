@@ -13,6 +13,11 @@ const TV_BASE = "https://s3.tradingview.com/external-embedding/embed-widget-";
 /** Row height in px – matches the reference design */
 const ROW_H = 500;
 
+/**
+ * Renders a responsive dashboard with market overview, stock heatmap, top stories, and market quote widgets.
+ *
+ * @returns The dashboard content.
+ */
 export default function Home() {
   return (
     <div className="flex flex-col gap-6">

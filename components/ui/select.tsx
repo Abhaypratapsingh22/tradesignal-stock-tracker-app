@@ -8,6 +8,11 @@ import { ChevronDownIcon, CheckIcon, ChevronUpIcon } from "lucide-react"
 
 const Select = SelectPrimitive.Root
 
+/**
+ * Groups related select options.
+ *
+ * @param className - Additional CSS classes to apply to the group
+ */
 function SelectGroup({ className, ...props }: SelectPrimitive.Group.Props) {
   return (
     <SelectPrimitive.Group
@@ -18,6 +23,12 @@ function SelectGroup({ className, ...props }: SelectPrimitive.Group.Props) {
   )
 }
 
+/**
+ * Renders the currently selected value within a select control.
+ *
+ * @param className - Additional CSS classes to apply to the value.
+ * @returns The rendered select value.
+ */
 function SelectValue({ className, ...props }: SelectPrimitive.Value.Props) {
   return (
     <SelectPrimitive.Value
@@ -28,6 +39,12 @@ function SelectValue({ className, ...props }: SelectPrimitive.Value.Props) {
   )
 }
 
+/**
+ * Renders a button for opening the select menu.
+ *
+ * @param size - Controls the trigger height and corner radius.
+ * @returns The styled select trigger element.
+ */
 function SelectTrigger({
   className,
   size = "default",
@@ -56,6 +73,17 @@ function SelectTrigger({
   )
 }
 
+/**
+ * Renders the select options in a positioned popup with scrolling support.
+ *
+ * @param children - The select options and groups to display.
+ * @param side - The side of the trigger where the popup appears.
+ * @param sideOffset - The distance between the popup and the trigger.
+ * @param align - The popup's alignment relative to the trigger.
+ * @param alignOffset - The alignment offset from the trigger.
+ * @param alignItemWithTrigger - Whether to align the popup with the trigger item.
+ * @returns The positioned select content popup.
+ */
 function SelectContent({
   className,
   children,
@@ -95,6 +123,9 @@ function SelectContent({
   )
 }
 
+/**
+ * Renders a styled label for a group of select options.
+ */
 function SelectLabel({
   className,
   ...props
@@ -108,6 +139,11 @@ function SelectLabel({
   )
 }
 
+/**
+ * Renders a selectable option with disabled and selected states.
+ *
+ * @returns The styled select option content.
+ */
 function SelectItem({
   className,
   children,
@@ -136,6 +172,9 @@ function SelectItem({
   )
 }
 
+/**
+ * Renders a divider between select options.
+ */
 function SelectSeparator({
   className,
   ...props
@@ -149,6 +188,9 @@ function SelectSeparator({
   )
 }
 
+/**
+ * Renders an upward scroll control for the select content.
+ */
 function SelectScrollUpButton({
   className,
   ...props

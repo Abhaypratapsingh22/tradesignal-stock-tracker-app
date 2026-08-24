@@ -4,6 +4,12 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
+/**
+ * Renders a styled label element with support for custom classes and standard label properties.
+ *
+ * @param className - Additional classes to apply to the label
+ * @param props - Standard label properties
+ */
 function Label({ className, ...props }: React.ComponentProps<"label">) {
   return (
     <label

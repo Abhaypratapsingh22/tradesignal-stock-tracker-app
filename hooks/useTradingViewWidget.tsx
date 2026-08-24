@@ -2,6 +2,14 @@
 
 import { useEffect, useRef } from "react";
 
+/**
+ * Creates a ref for a container that hosts an initialized TradingView widget.
+ *
+ * @param scriptUrl - The URL of the TradingView widget script
+ * @param config - The configuration passed to the widget
+ * @param height - The container height in pixels
+ * @returns A ref to the widget container element
+ */
 export function useTradingViewWidget(
   scriptUrl: string,
   config: Record<string, unknown>,

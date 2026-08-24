@@ -18,6 +18,11 @@ const user = {
   name: "TradeSignal User",
 };
 
+/**
+ * Renders the user dropdown with navigation items and a sign-out action.
+ *
+ * @returns The user dropdown menu.
+ */
 export default function UserDropdown() {
   const router = useRouter();
 

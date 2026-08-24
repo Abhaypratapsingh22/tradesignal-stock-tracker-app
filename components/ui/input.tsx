@@ -3,6 +3,12 @@ import { Input as InputPrimitive } from "@base-ui/react/input"
 
 import { cn } from "@/lib/utils"
 
+/**
+ * Renders a styled input element with support for custom classes and standard input properties.
+ *
+ * @param className - Additional classes to apply to the input
+ * @returns The styled input element
+ */
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {
   return (
     <InputPrimitive
