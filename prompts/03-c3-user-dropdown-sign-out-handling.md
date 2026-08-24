@@ -73,7 +73,7 @@ Open [shadcn/create](/create?template=next) and build your preset visually. Choo
   </Link>
 </Button>
 
-### Create Project
+### Create Project with shadcn/create
 
 Click `Create Project`, choose your package manager, and copy the generated command.
 
@@ -85,7 +85,7 @@ npx shadcn@latest init --preset [CODE] --template next
 
 The exact command will include your selected options such as `--base`, `--monorepo`, or `--rtl`.
 
-### Add Components
+### Add Components with shadcn/create
 
 Add the `Card` component to your project:
 
@@ -136,7 +136,7 @@ If you created a monorepo, update `apps/web/app/page.tsx` and import from `@work
 
 <Steps>
 
-### Create Project
+### Create Project with the shadcn CLI
 
 Run the `init` command to scaffold a new Next.js project. Follow the prompts to configure your project: base, preset, monorepo, and more.
 
@@ -150,7 +150,7 @@ npx shadcn@latest init -t next
 npx shadcn@latest init -t next --monorepo
 ```
 
-### Add Components
+### Add Components with the shadcn CLI
 
 Add the `Card` component to your project:
 
@@ -201,7 +201,7 @@ If you created a monorepo, update `apps/web/app/page.tsx` and import from `@work
 
 <Steps>
 
-### Create Project
+### Create Project with create-next-app
 
 If you need a new Next.js project, create one with `create-next-app`. Otherwise, skip this step.
 
@@ -247,7 +247,7 @@ Run the `shadcn` init command to set up shadcn/ui in your project.
 npx shadcn@latest init
 ```
 
-### Add Components
+### Add Components to an Existing Project
 
 You can now start adding components to your project.
 

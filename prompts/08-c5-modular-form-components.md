@@ -2,7 +2,7 @@
 
 Read AGENTS.md first and follow it strictly.
 
-Install react-hook-form and react-select-country-list (with its type support), and only add shadcn/ui primitives after user approval for the specific components needed (input, label, select, command, popover, button). React Hook Form manages validation and form state; react-select-country-list provides the searchable country list and types used by the combobox.
+Before installing dependencies, explain their necessity and request explicit user approval. `react-hook-form` is necessary for form state management and validation; `react-select-country-list` is necessary for the searchable country list used by the country combobox, including its type support. Do not install either package until the user approves. Only add shadcn/ui primitives after user approval for the specific components needed (input, label, select, command, popover, button). React Hook Form manages validation and form state; react-select-country-list provides the searchable country list and types used by the combobox.
 
 Implement reusable form primitives under components/forms/:
 
