@@ -1,4 +1,4 @@
-# 04 Resuable Tranding View
+# 04 Reusable Trading View
 
 Read AGENTS.md first and follow it strictly.
 
@@ -8,7 +8,7 @@ Dynamic Script Loading Hook (hooks/useTradingViewWidget.tsx):
 
 Create a client hook ("use client") accepting scriptUrl: string, config: Record<string, unknown>, and height: number = 600.
 
-Initialize a typed containerRef = useRef<HTMLDivElement null |>(null).
+Initialize a typed containerRef = useRef<HTMLDivElement | null>(null).
 
 In useEffect, guard against missing refs and prevent duplicate script injection using a dataset flag (containerRef.current.dataset.loaded).
 

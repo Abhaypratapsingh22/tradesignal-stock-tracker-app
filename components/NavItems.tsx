@@ -13,7 +13,7 @@ export default function NavItems() {
       return pathname === "/";
     }
 
-    return pathname.startsWith(href);
+    return pathname === href || pathname.startsWith(`${href}/`);
   };
 
   return (

@@ -1,4 +1,4 @@
-# 12 Better Auth Initilization
+# 12 Better Auth Initialization
 
 Read AGENTS.md first and follow it strictly.
 

@@ -1,4 +1,4 @@
-# 05 Generic Tranding View
+# 05 Generic Trading View
 
 Read AGENTS.md first and follow it strictly.
 

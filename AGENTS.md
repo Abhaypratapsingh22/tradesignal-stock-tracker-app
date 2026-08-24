@@ -112,7 +112,7 @@ public/
 
 ## 4. Design System & UI Implementation Rules (Binance Design Specification)
 
-Every UI element must strictly implement the design tokens defined in `design.md`. Match layout, geometry, typography, and contrast pixel-perfectly.
+Every UI element must strictly implement the design tokens defined in `DESIGN.md`. Match layout, geometry, typography, and contrast pixel-perfectly.
 
 ### A. Color Palette & Voltage Rules
 
@@ -153,7 +153,7 @@ Typography is divided functionally[cite: 1]:
 | **Numerical / Tabular** | `BinancePlex`, `JetBrains Mono`, `monospace` | 500, 700 | Ticker prices, percentage changes, market cap, financial numbers[cite: 1] |
 
 * Display headlines must maintain a bold weight of `600` to `700`[cite: 1]. Do not soften display weights to 400[cite: 1].
-* All financial figures, prices, and statistics must use tabular number fonts to prevent horizontal jitter during updates[cite: 1].
+* All financial figures, prices, and statistics must use the BinancePlex / JetBrains Mono tabular stack to prevent horizontal jitter during updates[cite: 1].
 
 ## 5. Engineering Standards & Subsystem Rules
 
@@ -256,7 +256,7 @@ Before submitting any feature or merging PRs, verify:
 ## 7. Mandatory Implementation Rules
 
 1. **Read and Follow:** Always inspect this file before writing code[cite: 2]. Follow existing architectural boundaries and directory assignments[cite: 2].
-2. **Design Fidelity:** Replicate the provided design theme pixel-perfectly[cite: 1, 2]. Use the yellow accent `#FCD535`[cite: 1], dark surfaces `#1E2329`[cite: 1], and tabular fonts `#0B0E11` precisely as specified[cite: 1].
+2. **Design Fidelity:** Replicate the provided design theme pixel-perfectly[cite: 1, 2]. Use the yellow accent `#FCD535`[cite: 1], dark surfaces `#1E2329`[cite: 1], and the BinancePlex / JetBrains Mono tabular font stack precisely as specified[cite: 1].
 3. **No Unapproved Packages:** Do not install external npm packages without explaining the necessity and requesting user approval[cite: 2].
 4. **End-to-End Delivery:** Deliver fully typed, functional code with all error states, loading skeletons, and edge-case fallbacks implemented.
-5. **Refer to Design.md:** Where the designing part is needed.
+5. **Refer to DESIGN.md:** Where the designing part is needed.

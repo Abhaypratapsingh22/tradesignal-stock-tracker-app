@@ -512,7 +512,7 @@ Binance's radius hierarchy is tighter than typical marketing systems — most su
 
 **`button-subscribe`** — Compact yellow CTA used in the Smart Money traders table to subscribe to a top trader. Smaller height (28px) and tighter padding than the primary CTA — fits inside dense table rows. Same yellow + black combination.
 
-**`text-link`** — Inline body links in `{colors.primary}` (yellow on dark, also yellow on light). No underline by default. Type inherits `{typography.body-md}`.
+**`text-link`** — Inline body links on dark surfaces use `{colors.primary}` (yellow), while links on light surfaces use a dark accessible color such as `{colors.ink}` or `{colors.body-on-light}`. No underline by default. Type inherits `{typography.body-md}`.
 
 ### Cards & Containers
 
