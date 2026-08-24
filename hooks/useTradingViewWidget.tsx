@@ -25,8 +25,19 @@ export function useTradingViewWidget(
     const widgetEl = document.createElement("div");
     widgetEl.className = "tradingview-widget-container__widget";
     widgetEl.style.width = "100%";
-    widgetEl.style.height = "100%";
+    widgetEl.style.height = "calc(100% - 32px)";
     container.appendChild(widgetEl);
+
+    // TradingView copyright attribution element (required by TradingView terms)
+    const copyrightEl = document.createElement("div");
+    copyrightEl.className = "tradingview-widget-container__copyright";
+    const copyrightLink = document.createElement("a");
+    copyrightLink.href = "https://www.tradingview.com/";
+    copyrightLink.rel = "noopener nofollow";
+    copyrightLink.target = "_blank";
+    copyrightLink.textContent = "Track all markets on TradingView";
+    copyrightEl.appendChild(copyrightLink);
+    container.appendChild(copyrightEl);
 
     const script = document.createElement("script");
     script.src = scriptUrl;

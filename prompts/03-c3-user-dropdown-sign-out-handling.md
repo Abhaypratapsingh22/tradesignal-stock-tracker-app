@@ -85,7 +85,7 @@ npx shadcn@latest init --preset [CODE] --template next
 
 The exact command will include your selected options such as `--base`, `--monorepo`, or `--rtl`.
 
-### Add Components with shadcn/create
+### Add Components with the shadcn CLI
 
 Add the `Card` component to your project:
 

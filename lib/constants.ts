@@ -81,21 +81,21 @@ export const marketDataConfig = {
   gridLineColor: "#2b3139",
   fontColor: "#eaecef",
   showFloatingTooltip: false,
-  tabs: [
+  symbolsGroups: [
     {
-      title: "Indices",
+      name: "Indices",
       symbols: [
-        { s: "FOREXCOM:SPXUSD", d: "S&P 500" },
-        { s: "FOREXCOM:NSXUSD", d: "Nasdaq 100" },
-        { s: "INDEX:DOWI", d: "Dow 30" },
+        { name: "FOREXCOM:SPXUSD", displayName: "S&P 500" },
+        { name: "FOREXCOM:NSXUSD", displayName: "Nasdaq 100" },
+        { name: "INDEX:DOWI", displayName: "Dow 30" },
       ],
     },
     {
-      title: "Commodities",
+      name: "Commodities",
       symbols: [
-        { s: "TVC:GOLD", d: "Gold" },
-        { s: "TVC:SILVER", d: "Silver" },
-        { s: "NYMEX:CL1!", d: "Crude Oil" },
+        { name: "TVC:GOLD", displayName: "Gold" },
+        { name: "TVC:SILVER", displayName: "Silver" },
+        { name: "NYMEX:CL1!", displayName: "Crude Oil" },
       ],
     },
   ],
