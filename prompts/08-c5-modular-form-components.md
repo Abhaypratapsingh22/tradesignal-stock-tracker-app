@@ -2,7 +2,7 @@
 
 Read AGENTS.md first and follow it strictly.
 
-Install react-hook-form, react-select-country-list (with types), and shadcn/ui primitives (input, label, select, command, popover, button).
+Install react-hook-form and react-select-country-list (with its type support), and only add shadcn/ui primitives after user approval for the specific components needed (input, label, select, command, popover, button). React Hook Form manages validation and form state; react-select-country-list provides the searchable country list and types used by the combobox.
 
 Implement reusable form primitives under components/forms/:
 
@@ -30,4 +30,4 @@ Connect with React Hook Form via <Controller> for state binding and display vali
 
 FooterLink (components/forms/FooterLink.tsx):
 
-Render helper text with Next.js <Link className="footer-link" href="{href}"> inside <div className="text-center pt-4">.
+Render helper text with Next.js <Link className="footer-link" href={href}> inside <div className="text-center pt-4">.

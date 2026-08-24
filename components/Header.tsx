@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import logo from "@/assests/images/tradesignal-logo.png";
 import NavItems from "@/components/NavItems";
+import UserDropdown from "@/components/UserDropdown";
 
 export default function Header() {
   return (
@@ -28,7 +29,7 @@ export default function Header() {
         </nav>
 
         <div className="ml-auto flex items-center gap-3">
-          <div className="h-10 w-10 rounded-full border border-white/10 bg-white/5" />
+          <UserDropdown />
         </div>
       </div>
     </header>
